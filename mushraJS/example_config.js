@@ -10,7 +10,7 @@ var TestData = {
   "ShowFileIDs": false,
   "EnableABLoop": true,
   "EnableOnlineSubmission": true,
-  "SubmitResultsURL": "https://damp-ravine-1269.herokuapp.com/submit",
+  "SubmitResultsURL": "https://gentle-tundra-1517.herokuapp.com/submit",
   "SupervisorContact": "jfsantos@emt.inrs.ca",
   "Testsets": [
     //    
