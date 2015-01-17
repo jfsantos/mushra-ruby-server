@@ -4,6 +4,7 @@ require 'uri'
 
 set :static, true
 set :public_folder, 'mushraJS'
+set :port, ARGV[0]
 
 get '/' do
   redirect 'index.html'
