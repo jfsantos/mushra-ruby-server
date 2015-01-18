@@ -1,10 +1,19 @@
 require 'sinatra'
 require 'json'
 require 'uri'
+require 'sequel'
 
 set :static, true
 set :public_folder, 'mushraJS'
 set :port, ARGV[0]
+
+configure :production do
+  Sequel.connect ENV['HEROKU_POSTGRESQL_VIOLET_URL']
+end
+
+configure :development do
+  Sequel.connect 'sqlite://test.db'
+end
 
 get '/' do
   redirect 'index.html'
