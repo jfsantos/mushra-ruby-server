@@ -35,3 +35,11 @@ namespace :db do
   end
 end
 
+desc "Show a list of the users that took the test"
+task :results do
+  require "sequel"
+  DB = Sequel.connect(ENV['DATABASE_URL'])
+  DB[:users].all.each do |user|
+    puts "#{user[:id]} : #{user[:name]}, #{user[:email]}"
+  end
+end
