@@ -10,7 +10,7 @@ var TestData = {
   "ShowFileIDs": false,
   "EnableABLoop": true,
   "EnableOnlineSubmission": true,
-  "SubmitResultsURL": "https://gentle-tundra-1517.herokuapp.com/submit",
+  "SubmitResultsURL": "http://localhost:4567/submit",
   "SupervisorContact": "jfsantos@emt.inrs.ca",
   "Testsets": [
     //    
