@@ -8,7 +8,7 @@ set :public_folder, 'mushraJS'
 set :port, ARGV[0]
 
 configure :production do
-  DB = Sequel.connect ENV['HEROKU_POSTGRESQL_VIOLET_URL']
+  DB = Sequel.connect ENV['DATABASE_URL']
 end
 
 configure :development do
